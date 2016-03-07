@@ -1,0 +1,89 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template_login.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/styles-mobile.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Herramientas de etiquetado energético colombiano</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="index.html"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <!-- InstanceBeginEditable name="Contenido" -->
+  <div class="content clearfix">
+    <h1>Herramientas de etiquetado energético</h1>
+    <div id="form-equipo" class="white-popup mfp-hide">
+      <h1>Información del equipo</h1>
+      <div class="btn btn-add-equip"><span class="glyphicon glyphicon-plus"></span>Agregar equipo</div>
+      <form class="retiq-form no-fondo separador">
+        <div class="form-group">
+          <label class="float-label">Consumo promedio</label>
+          <input type="number" class="form-control" placeholder="500" disabled>
+          <div class="input-group-addon"><abbr title="Kilovatio hora sobre mes">kWh/mes</abbr></div>
+          <div class="input-group-addon admin-glyph"><a href="#" class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="El consumo energético dependerá del lugar de instalación, modo de uso y mantenimiento del equipo."></a></div>
+        </div>
+        <div class="form-group">
+          <label class="float-label">Días de uso</label>
+          <input type="number" class="form-control" placeholder="días de uso">
+          <div class="input-group-addon">días/mes</div>
+          <div class="input-group-addon admin-glyph"><a href="#" class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="Días al mes que utiliza el equipo"></a></div>
+        </div>
+        <div class="form-group">
+          <label class="float-label">Horas de uso</label>
+          <input type="number" class="form-control" placeholder="Horas de uso">
+          <div class="input-group-addon">horas/día</div>
+          <div class="input-group-addon admin-glyph"><a href="#" class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="Horas al día que utiliza el equipo"></a></div>
+        </div>
+        <div class="btn btn-add-equip pull-right"><span class="glyphicon glyphicon-minus"></span>Borrar este equipo</div>
+      </form>
+      <form id="botones" class="retiq-form no-fondo">
+        <div class="button-group">
+          <input class="btn guardar" type="button" id="boton-cerrar" value="Guardar">
+          <input class="btn cancelar" type="button" id="boton-guardar" value="Cancelar">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- InstanceEndEditable -->
+  </div>
+<!-- Librerías JavaScript --> 
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dragend.min.js"></script>
+<!-- InstanceBeginEditable name="JavaScript" --> 
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script> 
+<!-- InstanceEndEditable --> 
+</body>
+<!-- InstanceEnd --></html>

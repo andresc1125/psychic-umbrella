@@ -1,0 +1,129 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template_login.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/styles-mobile.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Herramientas de etiquetado energético colombiano</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" type="text/css" href="../css/fileinput.css">
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="../index.html"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <!-- InstanceBeginEditable name="Contenido" -->
+  <div class="content clearfix">
+    <h1>Ejemplo de formularios de registro de producto</h1>
+    <form class="retiq-form" style="margin-top:50px;">
+      <h1>Gasodomésticos de cocción a gas - Mesa de trabajo</h1>
+      <div class="form-group">
+        <label class="float-label">Imagen del producto</label>
+        <input id="file-es" name="file-es[]" type="file" multiple>
+        <p class="help-block"><i>La imagen debe tener un tamaño de 120px de ancho X 120px de alto.</i></p>
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputPrecio">Marca</label>
+        <input type="number" class="form-control" id="InputPrecio" placeholder="Marca del equipo">
+      </div>
+      <div class="form-group">
+        <a href="#" class="btn btn-submit pull-right">Crear marca</a>
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputPrecio">Referencia</label>
+        <input type="number" class="form-control" id="InputPrecio" placeholder="Referencia del equipo">
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputPrecio">Precio de referencia</label>
+        <div class="input-group-addon">$ COP</div>
+        <input type="number" class="form-control" id="InputPrecio" placeholder="Precio">
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputConsumo">Consumo de energía</label>
+        <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+        <div class="input-group-addon"><abbr title="Kilovatio hora sobre mes">kWh/mes</abbr></div>
+        <div class="input-group-addon admin-glyph"><a href="#" class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="El consumo energético dependerá del lugar de instalación, modo de uso y mantenimiento del equipo."></a></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Rendimiento medio</label>
+        <input type="number" class="form-control" placeholder="Introduzca el rendimiento medio">
+        <div class="input-group-addon"><abbr title="porcentaje">%</abbr></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Clase energética</label>
+        <select class="form-control">
+          <option>Sin categorizar</option>
+          <option>a</option>
+          <option>b</option>
+          <option>c</option>
+          <option>d</option>
+          <option>e</option>
+        </select>
+      </div>
+	  <div class="form-group">
+        <label class="float-label">Número de quemadores</label>
+        <input type="number" class="form-control" placeholder="Introduzca el número de quemadores">
+      </div>
+      <div class="form-group">
+        <label class="float-label">Consumo calorifico total</label>
+        <input type="number" class="form-control" placeholder="Introduzca el consumo calorífico total">
+        <div class="input-group-addon"><abbr title="Kilovatio">kW</abbr></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Tipo de encendido</label>
+        <select class="form-control">
+          <option>Seleccione un tipo de encendido</option>
+          <option>Electrónico</option>
+          <option>Manual</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Bloqueo de válvulas</label>
+          <div class="switch">
+            <input id="switch1" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+            <label for="switch1" data-on="Si" data-off="No"></label>
+          </div>
+
+      </div>
+
+      <div class="input-group-lg" style="width:100%; text-align:center;"> <a href="#" class="btn btn-default btn-lg">Cancelar</a> <a href="../admin_tablas.html" class="btn btn-submit btn-lg">Subir</a> </div>
+    </form>
+  </div>
+  <!-- InstanceEndEditable -->
+  </div>
+<!-- Librerías JavaScript --> 
+<script src="../js/jquery-1.11.3.js"></script> 
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/dragend.min.js"></script>
+<!-- InstanceBeginEditable name="JavaScript" -->
+<script src="../js/fileinput.js"></script>
+<script src="../js/ui/funciones_formularios.js"></script>
+<!-- InstanceEndEditable --> 
+</body>
+<!-- InstanceEnd --></html>

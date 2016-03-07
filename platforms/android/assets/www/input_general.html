@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-table.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
+<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+<link href="css/styles-mobile.css" rel="stylesheet" type="text/css">
+<title>Ranking energético</title>
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- Top Bar -->
+<div class="top-bar">
+  <div class="dropdown pull-right">
+    <button class="user-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Nombre del usuario <span class="caret"></span></button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="admin_general.html">Panel de control</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="admin_ranking.html">Administración Ranking Energético</a></li>
+      <li><a href="#">Administración Balance Energético</a></li>
+      <li><a href="perfil_resumen.html">Mi perfil</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Administrar usuarios</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="index.html">Cerrar sesión</a></li>
+    </ul>
+  </div>
+</div>
+  <!-- /Top Bar --> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="#"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <div class="col-lg-12" style="background-color:#f5f5f5; margin-bottom:20px;">
+    <div class="content">
+      <ol class="breadcrumb">
+        <li><a href="#">Inicio</a></li>
+        <li class="active">Herramientas de etiquetado energético</li>
+      </ol>
+    </div>
+  </div>
+  <div class="content clearfix">
+    <h1>Ejemplo de formularios de registro de producto</h1>
+    <form class="retiq-form" style="margin-top:50px;">
+      <h1>Título de formulario</h1>
+      <h2>Formulario general</h2>
+      <div class="form-group">
+        <div class="alert alert-danger">Los siguientes campos responden a la información general de los equipos</div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Imagen del producto</label>
+        <input id="file-es" name="file-es[]" type="file" multiple>
+        <p class="help-block"><i>La imagen debe tener un tamaño de 120px de ancho X 120px de alto.</i></p>
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputPrecio">Precio de referencia</label>
+        <div class="input-group-addon">$ COP</div>
+        <input type="number" class="form-control" id="InputPrecio" placeholder="Precio">
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputPrecio">Marca</label>
+        <input type="number" class="form-control" id="InputPrecio" placeholder="Marca del equipo">
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputPrecio">Referencia</label>
+        <input type="number" class="form-control" id="InputPrecio" placeholder="Referencia del equipo">
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputConsumo">Consumo de energía</label>
+        <input type="number" class="form-control" id="InputConsumo" placeholder="Consumo en kWh/mes">
+        <div class="input-group-addon"><abbr title="Kilovatio hora sobre mes">kWh/mes</abbr></div>
+        <div class="input-group-addon admin-glyph"><a href="#" class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="El consumo energético dependerá del lugar de instalación, modo de uso y mantenimiento del equipo."></a></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Ahorro energético</label>
+        <input type="number" class="form-control" placeholder="Introduzca la eficiencia energética">
+        <div class="input-group-addon">%</div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Clase energética</label>
+        <select class="form-control">
+          <option>Sin categorizar</option>
+          <option>a</option>
+          <option>b</option>
+          <option>c</option>
+          <option>d</option>
+          <option>e</option>
+          <option>f</option>
+          <option>g</option>
+        </select>
+      </div>
+      
+      
+		<h2>ACONDICIONADORES DE AIRE PARA RECINTOS Y UNIDADES TERMINALES COMPACTAS, Y ACONDICIONADORES DE AIRE UNITARIOS:</h2>
+        
+      <div class="form-group">
+        <div class="alert alert-danger">Los siguientes campos responden a la información del equipo Aires acondicionados</div>
+      </div>
+
+      <div class="form-group">
+        <label class="float-label">Eficiencia energética</label>
+        <input type="number" class="form-control" placeholder="Eficiencia energética en Wt/We">
+        <div class="input-group-addon">Wt/We</div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Capacidad de enfriamiento</label>
+        <input type="number" class="form-control" placeholder="Capacidad de enfriamiento en vatios">
+        <div class="input-group-addon">Vatios</div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Area máxima a acondicionar</label>
+        <input type="number" class="form-control" placeholder="Introduzca la capacidad volumétrica">
+        <div class="input-group-addon">M<span class="super">2</span></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Presión sonora</label>
+        <input type="number" class="form-control" placeholder="temperatura mínima">
+        <div class="input-group-addon">dB</div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Temperatura de operación</label>
+        <div class="input-group-addon">desde</div>
+        <input type="number" class="form-control" placeholder="temperatura mínima">
+        <div class="input-group-addon">hasta</div>
+        <input type="number" class="form-control" placeholder="temperatura máxima">
+        <div class="input-group-addon"><abbr title="grados centigrados">°C</abbr></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Disponibilidad de filtros</label>
+        <input type="number" class="form-control" placeholder="Introduzca la tención">
+      </div>
+      <div class="form-group">
+        <label class="float-label">Tipo de equipo</label>
+        <select class="form-control">
+          <option>Seleccione el tipo de equipo</option>
+          <option>Aire acondicionado para recintos</option>
+          <option>Aire acondicionado para sistema central</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label style="width:130px; display:table-cell;"></label>
+        <select class="form-control">
+          <option>Tipo de aire acondicionado para recintos</option>
+          <option>Ventana</option>
+          <option>Mini split</option>
+          <option>Portatil</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label style="width:130px; display:table-cell;"></label>
+        <select class="form-control">
+          <option>Tipo de aire acondicionado para sistema central</option>
+          <option>Cassete</option>
+          <option>Multi split</option>
+          <option>Paquete</option>
+          <option>Piso-techo</option>
+        </select>
+      </div>
+
+
+    
+
+
+      <h1>Generales</h1>
+      <div class="alert alert-danger">A continuación se listan los elementos generales del formulario (listas, botones, etc).</div>
+      <h2>Checkbox y radio buttons</h2>
+      <div class="form-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Opción 1 </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Opción 2 </label>
+        </div>
+        <div class="radio disabled">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+            Opción deshabilitada </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">
+            Ejemplo de checkbox 1</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">
+            Ejemplo de checkbox 2</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" disabled>
+            Ejemplo de checkbox deshabilitado</label>
+        </div>
+      </div>
+      <div class="alert alert-warning">Para añadir un checkbox o radio button inline utilizar la clase <b>.radio-inline</b> o <b>.checkbox-inline</b></div>
+      <h2>Variaciones de los campos</h2>
+      <div class="form-group">
+        <label class="float-label" for="InputTipo1">Deshabilitado</label>
+        <input type="text" class="form-control" id="InputTipo1" placeholder="Campo deshabilitado" disabled>
+      </div>
+      <div class="form-group">
+        <label class="float-label" for="InputTipo1">Campo de lectura</label>
+        <input type="text" class="form-control" id="InputTipo1" placeholder="Campo únicamente de lectura..." readonly>
+      </div>
+      <div class="form-group has-success">
+        <label class="control-label float-label">Input correcto</label>
+        <input type="text" class="form-control" aria-describedby="helpBlock2">
+        <span id="helpBlock2" class="help-block">Una linea de texto de ayuda que genera varias lineas en caso de ser muy largo</span> </div>
+      <div class="form-group has-warning">
+        <label class="control-label float-label">Input con alerta</label>
+        <input type="text" class="form-control">
+        <span id="helpBlock2" class="help-block">Una linea de texto de ayuda que genera varias lineas en caso de ser muy largo</span> </div>
+      <div class="form-group has-error">
+        <label class="control-label float-label">Input con error</label>
+        <input type="text" class="form-control">
+        <span id="helpBlock2" class="help-block">Una linea de texto de ayuda que genera varias lineas en caso de ser muy largo</span> </div>
+      <div class="has-success">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxSuccess" value="option1">
+            Checkbox correcto </label>
+        </div>
+      </div>
+      <div class="has-warning">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxWarning" value="option1">
+            Checkbox con alerta </label>
+        </div>
+      </div>
+      <div class="has-error">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxError" value="option1">
+            Checkbox con error </label>
+        </div>
+      </div>
+      <h2>Variaciones con íconos</h2>
+      <p style="margin:auto auto 20px; text-align:center;">Para ver toda la lista de íconos dirigise a <a href="http://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp" target="_blank">glyphicons en W3Schools</a>
+      <div class="form-group has-success has-feedback">
+        <label class="control-label float-label">Input correcto con ícono</label>
+        <input type="text" class="form-control"aria-describedby="inputSuccess2Status">
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span id="inputSuccess2Status" class="sr-only">(campo completado)</span> </div>
+      <div class="form-group has-warning has-feedback">
+        <label class="control-label float-label">Input de alerta con ícono</label>
+        <input type="text" class="form-control" aria-describedby="inputWarning2Status">
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span> <span id="inputWarning2Status" class="sr-only">(Alerta...)</span> </div>
+      <div class="form-group has-error has-feedback">
+        <label class="control-label float-label">Input de error con ícono</label>
+        <input type="text" class="form-control" aria-describedby="inputError2Status">
+        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span> <span id="inputError2Status" class="sr-only">(Error...)</span> </div>
+      <div class="form-group has-success has-feedback">
+        <label class="control-label float-label" for="inputGroupSuccess1">Grupo input correcto con iconos</label>
+        <div class="input-group"> <span class="input-group-addon">@</span>
+          <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+        </div>
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span id="inputGroupSuccess1Status" class="sr-only">(e-mail introducido correctamente)</span> </div>
+      <h2>Variaciones de tamaño</h2>
+      <div class="form-group">
+        <label class="control-label float-label">Grande</label>
+        <input class="form-control input-lg" type="text" placeholder="Input grande">
+      </div>
+      <div class="form-group">
+        <label class="control-label float-label">Mediano</label>
+        <input class="form-control" type="text" placeholder="Input mediano (default)">
+      </div>
+      <div class="form-group">
+        <label class="control-label float-label">Pequeño</label>
+        <input class="form-control input-sm" type="text" placeholder="Input pequeño">
+      </div>
+      <h2>Variaciones de botones para formularios</h2>
+      <div class="input-group">
+        <p>
+          <button type="button" class="btn btn-submit btn-lg">Botón grande</button>
+          <button type="button" class="btn btn-default btn-lg">Botón grande</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-submit">Botón por defecto</button>
+          <button type="button" class="btn btn-default">Botón por defecto</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-submit btn-sm">Botón pequeño</button>
+          <button type="button" class="btn btn-default btn-sm">Botón pequeñon</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-submit btn-xs">Botón extra pequeño</button>
+          <button type="button" class="btn btn-default btn-xs">Botón extra pequeño</button>
+        </p>
+      </div>
+      <div class="input-group-lg" style="width:100%; text-align:center;"> <a href="index2.html" class="btn btn-default btn-lg">Cancelar</a> <a href="admin_tablas.html" class="btn btn-submit btn-lg">Subir</a> </div>
+    </form>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-group">
+      <div class="footer-logo"><img src="images/footer-logo.png" height="70"></div>
+      <div class="footer-info">
+        <nav><a href="#">Inicio</a></nav>
+        <span><b>Sede:</b> Diagonal 53 No. 34-53 <b>Teléfonos:</b> 2200200 - 2200100 Ext. 2244<br />
+        <b>Horarios de atentción:</b> Lunes a viernes de 8:00 a.m. a 5:00 p.m.<br />
+        Todos los derechos reservados © 2014</span> </div>
+    </div>
+    <div class="footer-group">
+      <div class="footer-entidades"><img src="images/footer-entidades.png"></div>
+    </div>
+  </div>
+</footer>
+<!-- Librerías JavaScript --> 
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-table.js"></script> 
+<script src="js/fileinput.js"></script> 
+<script src="js/ui/funciones_formularios.js"></script>
+</body>
+</html>

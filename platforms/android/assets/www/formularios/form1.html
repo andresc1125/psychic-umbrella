@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario de equipos</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/styles-mobile.css">
+</head>
+
+<body>
+<form class="retiq-form no-fondo">
+  <h1>Información del equipo</h1>
+  <div class="form-group">
+    <label class="float-label">Cantidad de equipos</label>
+    <select class="form-control" id="equipos">
+      <option value="0">Seleccione una opción</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <span class="help-block">Cantidad de unidades de este equipo en la casa</span> </div>
+  <div class="equipo-group" id="equipo1">
+    <h2>Equipo 1</h2>
+    <div class="form-group">
+      <label class="float-label">Nombre</label>
+      <input type="text" class="form-control" placeholder="Nombre del equipo">
+    </div>
+    <div class="form-group">
+      <label class="float-label">Consumo</label>
+      <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+      <div class="input-group-addon">kWh/mes</div>
+    </div>
+    <div class="form-group">
+      <label class="float-label">Horas de uso</label>
+      <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+      <div class="input-group-addon">horas/día</div>
+    </div>
+  </div>
+  <div class="equipo-group" id="equipo2">
+    <h2>Equipo 2</h2>
+    <div class="form-group">
+      <label class="float-label">Nombre</label>
+      <input type="text" class="form-control" placeholder="Nombre del equipo">
+    </div>
+    <div class="form-group">
+      <label class="float-label">Consumo</label>
+      <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+      <div class="input-group-addon">kWh/mes</div>
+    </div>
+    <div class="form-group">
+      <label class="float-label">Horas de uso</label>
+      <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+      <div class="input-group-addon">horas/día</div>
+    </div>
+  </div>
+  <div class="equipo-group" id="equipo3">
+    <h2>Equipo 3</h2>
+    <div class="form-group">
+      <label class="float-label">Nombre</label>
+      <input type="text" class="form-control" placeholder="Nombre del equipo">
+    </div>
+    <div class="form-group">
+      <label class="float-label">Consumo</label>
+      <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+      <div class="input-group-addon">kWh/mes</div>
+    </div>
+    <div class="form-group">
+      <label class="float-label">Horas de uso</label>
+      <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+      <div class="input-group-addon">horas/día</div>
+    </div>
+  </div>
+  <div class="equipo-group" id="equipo4">
+    <h2>Equipo 4</h2>
+    <div class="form-group">
+      <label class="float-label">Nombre</label>
+      <input type="text" class="form-control" placeholder="Nombre del equipo">
+    </div>
+    <div class="form-group">
+      <label class="float-label">Consumo</label>
+      <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+      <div class="input-group-addon">kWh/mes</div>
+    </div>
+    <div class="form-group">
+      <label class="float-label">Horas de uso</label>
+      <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+      <div class="input-group-addon">horas/día</div>
+    </div>
+  </div>
+  <input type="submit" id="guardar" value="Guardar"></form>
+</form>
+<script src="../js/jquery-1.11.3.js"></script> 
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/iframeResizer.contentWindow.min.js"></script>
+<script>
+function ocultar_campos(){
+	$("#equipo1").css("display","none");
+	$("#equipo2").css("display","none");
+	$("#equipo3").css("display","none");
+	$("#equipo4").css("display","none");
+}
+$(document).ready(function(e) {
+	$("#equipos").mouseup(function(e) {
+		ocultar_campos();
+        if(equipos.value==1){
+			$("#equipo1").css("display","block");
+			console.log("valor igual a 1");
+		}
+        else if(equipos.value==2){
+			$("#equipo1, #equipo2").css("display","block");
+			console.log("valor igual a 2");
+		}
+        else if(equipos.value==3){
+			$("#equipo1, #equipo2, #equipo3").css("display","block");
+			console.log("valor igual a 3");
+		}
+        else if(equipos.value==4){
+			$("#equipo1, #equipo2, #equipo3, #equipo4").css("display","block");
+			console.log("valor igual a 4");
+		}
+		else{
+			console.log("Ningún valor seleccionado");
+		}
+    });
+});
+</script>
+</body>
+</html>

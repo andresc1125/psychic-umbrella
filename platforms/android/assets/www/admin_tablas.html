@@ -1,0 +1,164 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template_login.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/styles-mobile.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Herramientas de etiquetado energético colombiano</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="index.html"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <!-- InstanceBeginEditable name="Contenido" -->
+  <div class="content clearfix">
+    <h1>Lista de equipos</h1>
+    <div class="alert alert-info">Este es un ejemplo de como deben mostrarse los elementos cargados de un equipo, con los datos que deben visualizarse.</div>
+    <div class="filtro-admin clearfix">
+    <div class="row">
+        <div class="col-md-3">
+            <label>Marca</label>
+            <select class="form-control">
+                <option>Seleccione la marca</option>
+                <option>Marca 1</option>
+                <option>Marca 2</option>
+                <option>Marca 3</option>
+                <option>Marca x</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label>Referencia</label>
+            <input type="text" class="form-control" placeholder="Referencia">
+        </div>
+        <div class="col-md-2">
+            <label>Clase energética</label>
+            <select class="form-control">
+                <option>Seleccione una clase</option>
+                <option>Sin categorizar</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label>Desde</label>
+            <input type="date" class="form-control">
+        </div>
+        <div class="col-md-2">
+            <label>Hasta</label>
+            <input type="date" class="form-control">
+        </div>
+        </div>
+        <div class="filtro-button-group">
+        <button id="filtrar" type="button" class="btn btn-submit">Filtrar</button>
+        <button id="reiniciar" type="button" class="btn btn-default">Reiniciar</button>
+        </div>
+      </div>
+    <table class="admin-table" id="table" cellspacing="0" width="auto" data-toggle="table" data-pagination="true"  data-tablesaw-mode="stack" data-tablesaw-sortable>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Marca</th>
+          <th>Referencia</th>
+          <th>Clase energética</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Fecha</th>
+          <th>Marca</th>
+          <th>Referencia</th>
+          <th>Clase energética</th>
+          <th>Acciones</th>
+        </tr>
+      </tfoot>
+      <tbody class="searchable">
+        <tr>
+          <td>16/01/2016</td>
+          <td>Marca X</td>
+          <td>Referencia X</td>
+          <td><img src="images/clases_energeticas/clase_b.png" /></td>
+          <td><a class="detalles" href="equipo_resumen.html">Detalles</a><a class="editar" href="#">Editar</a><a class="borrar" href="#">Borrar</a></td>
+        </tr>
+        <tr>
+          <td>12/01/2016</td>
+          <td>Marca X</td>
+          <td>Referencia X</td>
+          <td><img src="images/clases_energeticas/clase_c.png" /></td>
+          <td><a class="detalles" href="equipo_resumen.html">Detalles</a><a class="editar" href="#">Editar</a><a class="borrar" href="#">Borrar</a></td>
+        </tr>
+        <tr>
+          <td>15/12/2015</td>
+          <td>Marca X</td>
+          <td>Referencia X</td>
+          <td><img src="images/clases_energeticas/clase_g.png" /></td>
+          <td><a class="detalles" href="equipo_resumen.html">Detalles</a><a class="editar" href="#">Editar</a><a class="borrar" href="#">Borrar</a></td>
+        </tr>
+        <tr>
+          <td>16/01/2016</td>
+          <td>Marca X</td>
+          <td>Referencia X</td>
+          <td><img src="images/clases_energeticas/clase_b.png" /></td>
+          <td><a class="detalles" href="equipo_resumen.html">Detalles</a><a class="editar" href="#">Editar</a><a class="borrar" href="#">Borrar</a></td>
+        </tr>
+        <tr>
+          <td>12/01/2016</td>
+          <td>Marca X</td>
+          <td>Referencia X</td>
+          <td><img src="images/clases_energeticas/clase_c.png" /></td>
+          <td><a class="detalles" href="equipo_resumen.html">Detalles</a><a class="editar" href="#">Editar</a><a class="borrar" href="#">Borrar</a></td>
+        </tr>
+        <tr>
+          <td>15/12/2015</td>
+          <td>Marca X</td>
+          <td>Referencia X</td>
+          <td><img src="images/clases_energeticas/clase_g.png" /></td>
+          <td><a class="detalles" href="equipo_resumen.html">Detalles</a><a class="editar" href="#">Editar</a><a class="borrar" href="#">Borrar</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="input-group-lg"> <a href="subir_equipo.html" class="btn btn-default btn-lg">Crear equipo</a></div>
+  </div>
+  <!-- InstanceEndEditable -->
+  </div>
+<!-- Librerías JavaScript --> 
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dragend.min.js"></script>
+<!-- InstanceBeginEditable name="JavaScript" -->
+<script src="js/ui/funciones_tablas.js"></script>
+<!-- InstanceEndEditable --> 
+</body>
+<!-- InstanceEnd --></html>

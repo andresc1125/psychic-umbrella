@@ -1,0 +1,311 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template_login.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/styles-mobile.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Herramientas de etiquetado energético colombiano</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="index.html"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <!-- InstanceBeginEditable name="Contenido" -->
+  <div class="content clearfix">
+    <h1>Balance energético residencial</h1>
+  </div>
+  <div id="form-inicial" class="white-popup mfp-hide">
+    <form class="retiq-form no-fondo" style="background-color:#FFF; margin:20px auto;">
+      <h1>Ingrese los datos de su residencia</h1>
+      <div class="form-group">
+        <label class="float-label">Ciudad</label>
+        <select class="form-control" id="ciudades">
+          <option value="0">Seleccione su ciudad</option>
+          <option value="1">Aguachica</option>
+          <option value="2">Apartadó</option>
+          <option value="3">Arauca</option>
+          <option value="4">Armenia</option>
+          <option value="5">Barrancabermeja</option>
+          <option value="6">Barranquilla</option>
+          <option value="7">Bello</option>
+          <option value="8">Bogotá Distrito Capital</option>
+          <option value="9">Bucaramanga</option>
+          <option value="10">Buenaventura</option>
+          <option value="11">Buga</option>
+          <option value="12">Cali</option>
+          <option value="13">Cartago</option>
+          <option value="14">Cartagena</option>
+          <option value="15">Caucasia</option>
+          <option value="16">Cereté</option>
+          <option value="17">Chia</option>
+          <option value="18">Ciénaga</option>
+          <option value="19">Cúcuta</option>
+          <option value="20">Dosquebradas</option>
+          <option value="21">Duitama</option>
+          <option value="22">Envigado</option>
+          <option value="23">Facatativá</option>
+          <option value="24">Florencia</option>
+          <option value="25">Floridablanca</option>
+          <option value="26">Fusagasugá</option>
+          <option value="27">Girardot</option>
+          <option value="28">Girón</option>
+          <option value="29">Ibagué</option>
+          <option value="30">Ipiales</option>
+          <option value="31">Itagüí</option>
+          <option value="32">Jamundí</option>
+          <option value="33">Lorica</option>
+          <option value="34">Los Patios</option>
+          <option value="35">Magangué</option>
+          <option value="36">Maicao</option>
+          <option value="37">Malambo</option>
+          <option value="38">Manizales</option>
+          <option value="39">Medellín</option>
+          <option value="40">Melgar</option>
+          <option value="41">Montería</option>
+          <option value="42">Neiva</option>
+          <option value="43">Ocaña</option>
+          <option value="44">Paipa</option>
+          <option value="45">Palmira</option>
+          <option value="46">Pamplona</option>
+          <option value="47">Pasto</option>
+          <option value="48">Pereira</option>
+          <option value="49">Piedecuesta</option>
+          <option value="50">Pitalito</option>
+          <option value="51">Popayán</option>
+          <option value="52">Quibdó</option>
+          <option value="53">Riohacha</option>
+          <option value="54">Rionegro</option>
+          <option value="55">Sabanalarga</option>
+          <option value="56">Sahagún</option>
+          <option value="57">San Andrés</option>
+          <option value="58">Santa Marta</option>
+          <option value="59">Sincelejo</option>
+          <option value="60">Soacha</option>
+          <option value="61">Sogamoso</option>
+          <option value="62">Soledad</option>
+          <option value="63">Tibú</option>
+          <option value="64">Tuluá</option>
+          <option value="65">Tumaco</option>
+          <option value="66">Tunja</option>
+          <option value="67">Turbo</option>
+          <option value="68">Valledupar</option>
+          <option value="69">Villa de leyva</option>
+          <option value="70">Villa del Rosario</option>
+          <option value="71">Villavicencio</option>
+          <option value="72">Yopal</option>
+          <option value="73">Yumbo</option>
+          <option value="74">Zipaquirá</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Estrato</label>
+        <select class="form-control" id="estratos">
+          <option value="0">Seleccione su estrato</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Consumo promedio de electricidad</label>
+        <input class="form-control" type="number" placeholder="Introduzca el dato promedio de su recibo">
+        </input>
+        <div class="input-group-addon"><a href="#" class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Introduzca en este campo la cifra que aparece en su recibo de pago de electricidad, que especifica el consumo promedio en su hogar."></a></div>
+      </div>
+      <div class="form-group">
+        <label class="float-label">Consumo promedio de gas</label>
+        <input class="form-control" type="number" placeholder="Introduzca el dato promedio de su recibo">
+        </input>
+        <div class="input-group-addon"><a href="#" class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Introduzca en este campo la cifra que aparece en su recibo de pago de gas, que especifica el consumo promedio en su hogar."></a></div>
+      </div>
+      <div class="button-group">
+        <input class="btn guardar" type="button" id="cerrar-equipo" value="Continuar">
+        </input>
+        <a class="btn cancelar" type="button" href="index.html" target="_self">Cancelar </a> </div>
+    </form>
+  </div>
+  <!--Fin Formulario inicial
+--> 
+  <!--Inicio Formulario de equipo
+-->
+  <div id="form-equipo" class="white-popup mfp-hide">
+    <form id="equipo-form" class="retiq-form no-fondo" style="background-color:#FFF; margin:20px auto;">
+      <h1>Información del equipo</h1>
+      <div class="form-group">
+        <label class="float-label">Cantidad de equipos</label>
+        <select class="form-control" id="equipos">
+          <option value="0">Seleccione una opción</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <span class="help-block">Cantidad de unidades de este equipo en la casa</span> </div>
+      <div class="equipo-group" id="equipo1">
+        <h2>Equipo 1</h2>
+        <div class="form-group">
+          <label class="float-label">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre del equipo">
+        </div>
+        <div class="form-group">
+          <label class="float-label">Consumo</label>
+          <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+          <div class="input-group-addon">kWh/mes</div>
+        </div>
+        <div class="form-group">
+          <label class="float-label">Horas de uso</label>
+          <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+          <div class="input-group-addon">horas/día</div>
+        </div>
+      </div>
+      <div class="equipo-group" id="equipo2">
+        <h2>Equipo 2</h2>
+        <div class="form-group">
+          <label class="float-label">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre del equipo">
+        </div>
+        <div class="form-group">
+          <label class="float-label">Consumo</label>
+          <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+          <div class="input-group-addon">kWh/mes</div>
+        </div>
+        <div class="form-group">
+          <label class="float-label">Horas de uso</label>
+          <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+          <div class="input-group-addon">horas/día</div>
+        </div>
+      </div>
+      <div class="equipo-group" id="equipo3">
+        <h2>Equipo 3</h2>
+        <div class="form-group">
+          <label class="float-label">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre del equipo">
+        </div>
+        <div class="form-group">
+          <label class="float-label">Consumo</label>
+          <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+          <div class="input-group-addon">kWh/mes</div>
+        </div>
+        <div class="form-group">
+          <label class="float-label">Horas de uso</label>
+          <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+          <div class="input-group-addon">horas/día</div>
+        </div>
+      </div>
+      <div class="equipo-group" id="equipo4">
+        <h2>Equipo 4</h2>
+        <div class="form-group">
+          <label class="float-label">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre del equipo">
+        </div>
+        <div class="form-group">
+          <label class="float-label">Consumo</label>
+          <input type="number" class="form-control" placeholder="Consumo en kWh/mes">
+          <div class="input-group-addon">kWh/mes</div>
+        </div>
+        <div class="form-group">
+          <label class="float-label">Horas de uso</label>
+          <input type="number" class="form-control" placeholder="Horas de uso del equipo">
+          <div class="input-group-addon">horas/día</div>
+        </div>
+      </div>
+      <div class="button-group">
+        <input class="btn guardar" type="button" id="cerrar-equipo" value="Guardar">
+        </input>
+        <input class="btn cancelar" type="button" id="cerrar-equipo" value="Cancelar">
+        </input>
+      </div>
+    </form>
+  </div>
+  <!--Fin Formulario de equipo
+-->
+  <div class="balance-content" id="balance">
+    <div class="balance-bg clearfix"></div>
+    <div class="balance-menu">
+      <ul class="icons-content">
+        <li><a class="menu-cuarto1">
+          <p>Habitación</p>
+          </a></li>
+        <li><a class="menu-cuarto2">
+          <p>Estudio</p>
+          </a></li>
+        <li><a class="menu-cuarto3">
+          <p>Baño</p>
+          </a></li>
+        <li><a class="menu-cuarto4">
+          <p>Sala</p>
+          </a></li>
+        <li><a class="menu-cuarto5">
+          <p>Cocina</p>
+          </a></li>
+        <li><a class="menu-cuarto6">
+          <p class="servicio">Cuarto de servicio</p>
+          </a></li>
+      </ul>
+      <div class="button-content"><a id="reinicia_vista" class="boton-naranja">Vista general</a><a id="reporte" class="boton-gris" href="pdf/reporte-demo.pdf" target="_blank">Generar reporte</a><a id="modificar_casa" class="boton-editar"><span class="glyphicon glyphicon-edit"></span>Modificar casa</a> </div>
+    </div>
+    <div class="balance-casa" id="casa">
+      <div class="balance-instruccion"> <span>Haga clic en los cuartos para introducir los datos de sus electrodomésticos y gasodomésticos.</span> </div>
+      <div class="casa-techo clearfix"></div>
+      <div class="piso2">
+        <div class="cuarto1"><a id="cuarto2-1" class="edit"></a></div>
+        <div class="cuarto2"><a id="cuarto2-2" class="edit"></a></div>
+        <div class="cuarto3"><a id="cuarto2-3" class="edit"></a></div>
+      </div>
+      <div class="piso1">
+        <div class="cuarto1"><a id="cuarto1-1" class="edit"></a></div>
+        <div class="cuarto2"><a id="cuarto1-2" class="edit"></a></div>
+        <div class="cuarto3"><a id="cuarto1-3" class="edit"></a></div>
+      </div>
+    </div>
+    <div class="habitacion1" id="habitacion1"> <a class="campos campo1" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Lampara"></a> <a class="campos campo2" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Parlantes"></a> <a class="campos campo3" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Televisor"></a> <a class="campos campo4" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="DVD"></a> </div>
+    <div class="habitacion2" id="habitacion2"> <a class="campos campo1" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Sandwichera"></a> <a class="campos campo2" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Horno microondas"></a> <a class="campos campo3" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Licuadora"></a> <a class="campos campo4" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Cafetera"></a> <a class="campos campo5" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Arrocera"></a> <a class="campos campo6" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Nevera"></a> <a class="campos campo7" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Horno"></a> </div>
+    <div class="habitacion3" id="habitacion3"> <a class="campos campo1" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Calentador de agua"></a> <a class="campos campo2" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Lavadora"></a> <a class="campos campo3" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Secadora"></a> <a class="campos campo4" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Plancha"></a> </div>
+    <div class="habitacion4" id="habitacion4"> <a class="campos campo1" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Aire acondicionado"></a> <a class="campos campo2" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Ventilador"></a> <a class="campos campo3" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Televisor"></a> <a class="campos campo4" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Lámpara"></a> </div>
+    <div class="habitacion5" id="habitacion5"> <a class="campos campo1" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Balastos"></a> <a class="campos campo2" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Computador de escritorio"></a> <a class="campos campo3" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Computador portatil"></a> <a class="campos campo4" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Impresora"></a> <a class="campos campo5" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Smarthphone"></a> </div>
+    <div class="habitacion6" id="habitacion6"> <a class="campos campo1" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Bombilla"></a> <a class="campos campo2" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Plancha de pelo"></a> <a class="campos campo3" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Ducha eléctrica"></a> <a class="campos campo4" href="#form-equipo" data-toggle="tooltip" data-placement="top" title="Secador de pelo"></a></div>
+  </div>
+  <!-- InstanceEndEditable -->
+  </div>
+<!-- Librerías JavaScript --> 
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dragend.min.js"></script>
+<!-- InstanceBeginEditable name="JavaScript" --> 
+<script src="js/jquery.magnific-popup.js"></script> 
+<script src="js/balance.js"></script> 
+<script src="js/ui/funciones_balance.js"></script>
+<!-- InstanceEndEditable --> 
+</body>
+<!-- InstanceEnd --></html>

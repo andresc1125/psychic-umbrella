@@ -1,0 +1,13 @@
+[
+	{
+        "marca": "Marca 1<br>Referencia 1",
+        "precio": "$ 1'200.000",
+        "consumo": "19.5 kWh/mes",
+        "ahorro": "45%",
+        "volumen": "240 Litros",
+        "temperatura": "18 a 38 Cº",
+        "sistema": "Automático",
+        "clase": "<img src='images/a.png'>",
+        "visual": "<img src='images/equipo1.png'>"
+	}
+]

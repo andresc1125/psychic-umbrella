@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/styles-mobile.css">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Herramientas de etiquetado energético colombiano</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="../index.html"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="../index.html">Inicio</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../financiera">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <!-- TemplateBeginEditable name="Contenido" -->
+  <div class="content clearfix">
+    <h1>Herramientas de etiquetado energético</h1>
+    <div class="col-md-8">
+      <div class="col-md-6">
+        <div class="contenedor-gris">
+          <h2 class="icono1">Ranking Energético<br />
+            Colombiano</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget massa vitae arcu bibendum pellentesque. Phasellus auctor justo a eros aliquet aliquet. Aenean sit amet odio in quam porta luctus. Donec sapien lacus, fermentum auctor.</p>
+          <a href="../categorias.html" class="btn boton-visitar">Visitar</a> </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contenedor-gris">
+          <h2 class="icono2">Balance energético<br />
+            residencial</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget massa vitae arcu bibendum pellentesque. Phasellus auctor justo a eros aliquet aliquet. Aenean sit amet odio in quam porta luctus. Donec sapien lacus, fermentum auctor.</p>
+          <a href="../balance.html#balance" class="btn boton-visitar">Visitar</a> </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contenedor-gris">
+          <h2 class="icono3">Herramienta<br />
+            financiera</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget massa vitae arcu bibendum pellentesque. Phasellus auctor justo a eros aliquet aliquet. Aenean sit amet odio in quam porta luctus. Donec sapien lacus, fermentum auctor.</p>
+          <a href="#" class="btn boton-visitar">Visitar</a> </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contenedor-registro clearfix">
+        <form style="display:block; clear:both;">
+          <h2>Ingrese</h2>
+          <input type="text" class="form-control" placeholder="Correo electrónico">
+          <input type="text" class="form-control" placeholder="Contraseña">
+          <div class="col-xs-7"><a class="link-naranja" href="#">¿Olvidó su e-mail?</a><br />
+            <a class="link-naranja" href="#">¿Olvidó su contraseña?</a></div>
+          <div class="col-xs-5">
+            <input type="submit" class="btn boton-ingresar" value="Ingresar" style="float:right;">
+          </div>
+        </form>
+        <form style="display:block; clear:both;">
+          <h2>¿No tiene cuenta?</h2>
+          <input type="text" class="form-control" placeholder="Nombre completo">
+          <input type="text" class="form-control" placeholder="E-mail">
+          <input type="text" class="form-control" placeholder="Confirme su e-mail">
+          <input type="text" class="form-control" placeholder="Contraseña">
+          <input type="text" class="form-control" placeholder="Confirme su contraseña">
+          <div class="form-group">
+            <select name="select" class="form-control" placeholder="Tipo de usuario">
+              <option>Tipo de usuario</option>
+              <option>Usuario final</option>
+              <option>Distribuidor</option>
+              <option>Fabricante</option>
+            </select>
+          </div>
+          <a href="../registro.html" class="btn boton-registrar">Registrar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- TemplateEndEditable --></div>
+<!-- Librerías JavaScript -->
+<script src="../js/jquery-1.11.3.js"></script> 
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/dragend.min.js"></script>
+<!-- TemplateBeginEditable name="LibreriasJS" -->
+LibreriasJS
+<!-- TemplateEndEditable --> 
+</body>
+</html>

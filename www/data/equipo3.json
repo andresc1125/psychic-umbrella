@@ -1,0 +1,14 @@
+[
+	{
+        "marca": "<a href='#equipo3' id='open-equipo3'>Marca 3<br>Referencia 3</a>",
+        "referencia": "Referencia 3",
+        "precio": "$ 1'800.000",
+        "consumo": "18.5 kWh/mes",
+        "ahorro": "48%",
+        "volumen": "240 Litros",
+        "temperatura": "0 a 18 Cº",
+        "sistema": "Automático",
+        "clase": "<img src='images/f.png'>",
+        "visual": "<a href='#equipo3' id='open-equipo3'><img src='images/equipo3.png'></a>"
+	}
+]

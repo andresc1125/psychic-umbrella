@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<!-- InstanceBegin template="/Templates/template_logout.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="images/favicon.ico">
+<!-- Librerías CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/styles-mobile.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Herramientas de etiquetado energético colombiano</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="page-wrap"> 
+  <!-- NavBar responsivo -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Desplegar navegador</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand logo-retiq" href="index.html"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right menu-right">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="categorias.html">Ranking Energético</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="balance.html#balance">Balance Residencial</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="financiera">Herramienta Financiera</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <!-- InstanceBeginEditable name="Contenido" -->
+  <div class="content clearfix">
+    <div id="inicio" class="responsive-index">
+      <ul>
+        <li class="dragend-page">
+          <div> <img src="images/herramienta1.png" width="200">
+            <h1>Ranking Energético Colombiano</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque, quam sed accumsan ornare, ante enim finibus lectus, eget commodo velit quam at enim. Nullam et orci congue erat ornare molestie. Aliquam congue, odio et lobortis porta, nisi mauris venenatis odio, ut tempor dui neque sit amet mauris. Aliquam erat volutpat. Nam rutrum nisi non ante malesuada, ac bibendum turpis aliquam.</p>
+            <div class="btn-group"><a href="categorias.html" class="btn boton-ingresar">Visitar</a></div>
+          </div>
+        </li>
+        <li class="dragend-page">
+          <div> <img src="images/herramienta2.png" width="200">
+            <h1>Balance Energético<br />
+              Residencial</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque, quam sed accumsan ornare, ante enim finibus lectus, eget commodo velit quam at enim. Nullam et orci congue erat ornare molestie. Aliquam congue, odio et lobortis porta, nisi mauris venenatis odio, ut tempor dui neque sit amet mauris. Aliquam erat volutpat. Nam rutrum nisi non ante malesuada, ac bibendum turpis aliquam.</p>
+            <div class="btn-group"><a href="balance.html" class="btn boton-ingresar">Visitar</a></div>
+          </div>
+        </li>
+        <li class="dragend-page">
+          <div> <img src="images/herramienta3.png" width="200">
+            <h1>Calculadora<br />
+              Financiera</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque, quam sed accumsan ornare, ante enim finibus lectus, eget commodo velit quam at enim. Nullam et orci congue erat ornare molestie. Aliquam congue, odio et lobortis porta, nisi mauris venenatis odio, ut tempor dui neque sit amet mauris. Aliquam erat volutpat. Nam rutrum nisi non ante malesuada, ac bibendum turpis aliquam.</p>
+            <div class="btn-group"><a href="#" class="btn boton-ingresar">Visitar</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="form-inicial" class="white-popup mfp-hide">
+  <div class="retiq-form no-fondo" style="background-color:#FFF; margin:20px auto; text-align:center;">
+  <p>Haga swipe hacia los lados para navegar las diferentes opciones</p>
+  <img src="images/gestures.png" style="width: 100%">
+    <div class="button-group">
+      <input class="btn guardar" type="button" id="cerrar-equipo" value="Entendido">
+    </div>
+  </div>
+  <!-- InstanceEndEditable --></div>
+<!-- Librerías JavaScript --> 
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/dragend.min.js"></script> 
+<!-- InstanceBeginEditable name="LibreriasJS" --> 
+<script src="js/masonry.min.js"></script> 
+<script src="js/ui/masonry_action.js"></script> 
+<script src="js/jquery.magnific-popup.js"></script> 
+<script>
+
+    $(function() {
+
+      var firstChild = $("#inicio li:first-child").clone(),
+          lastChild  = $("#inicio li:last-child").clone(),
+          container  = $("#inicio ul");
+
+      firstChild.appendTo(container);
+      lastChild.prependTo(container);
+
+      $("#inicio").dragend({
+        jumpToPage: 2,
+        onSwipeEnd: function() {
+          var first = this.pages[0],
+              last = this.pages[this.pages.length - 1];
+
+          if (first === this.activeElement) {
+            this.jumpToPage(this.pages.length - 1 );
+          }
+
+          if (last === this.activeElement) {
+            this.jumpToPage(2);
+          }
+
+        },
+        afterInitialize: function() {
+          this.container.style.visibility = "visible";
+        }
+      });
+    });
+
+jQuery(window).load(function(){
+jQuery.magnificPopup.open({
+  items: {src: '#form-inicial'},type: 'inline', modal:true, showCloseBtn:true,}, 0);
+});
+$("#cerrar, #cerrar-equipo").click(function(e) {
+    $.magnificPopup.close();
+    console.log("reiniciando formularios");
+    $(':input','#equipo-form')
+    .not(':button, :submit, :reset, :hidden')
+    .val('')
+    .removeAttr('checked')
+    .removeAttr('selected');
+    ocultar_campos();
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script> 
+<!-- InstanceEndEditable -->
+<!--<script type="text/javascript" src="cordova.js"></script>-->
+</body>
+<!-- InstanceEnd -->
+</html>

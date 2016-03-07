@@ -1,0 +1,13 @@
+[
+	{
+        "marca": "<a href='#equipo2' id='open-equipo2'>Marca 2<br>Referencia 2</a>",
+        "precio": "$ 1'300.000",
+        "consumo": "21.5 kWh/mes",
+        "ahorro": "40%",
+        "volumen": "230 Litros",
+        "temperatura": "18 a 38 Cº",
+        "sistema": "Automático",
+        "clase": "<img src='images/b.png'>",
+        "visual": "<a href='#equipo2' id='open-equipo2'><img src='images/equipo2.png'></a>"
+	}
+]
